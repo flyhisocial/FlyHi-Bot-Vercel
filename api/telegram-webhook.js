@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // Initialize Google Gemini AI
@@ -37,7 +38,7 @@ Requirements:
 5. Keep it 150-200 words
 6. Make it authentic and engaging
 
-Generate content that sounds like the business owner wrote it personally.`;
+Generate content that should be accurate to the brand type and a brad needs for promotion.`;
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
