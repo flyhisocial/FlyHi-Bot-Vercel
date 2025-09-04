@@ -2,6 +2,7 @@
   "name": "flyhisocial-bot-vercel",
   "version": "1.0.0",
   "dependencies": {
-    "@google/generative-ai": "^0.2.1"
+    "@google/generative-ai": "^0.2.1",
+    "node-fetch": "^3.3.1"
   }
 }
