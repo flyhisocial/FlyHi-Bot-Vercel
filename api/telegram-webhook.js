@@ -1,4 +1,11 @@
-const fetch = require('node-fetch');
+let fetch;
+export default async function handler(req, res) {
+  if (!fetch) {
+    fetch = (await import('node-fetch')).default;
+  }
+  // Your existing code...
+}
+
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // Initialize Google Gemini AI
